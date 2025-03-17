@@ -1,0 +1,10 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/ct9-na-palma-da-mao-453123/ct9-backend', '.']
+images:
+  - 'gcr.io/ct9-na-palma-da-mao-453123/ct9-backend'
+options:
+  env:
+    - 'SPRING_DATASOURCE_URL='
+    - 'SPRING_DATASOURCE_USERNAME='
+    - 'SPRING_DATASOURCE_PASSWORD='  # Senha atualizada
